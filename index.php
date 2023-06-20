@@ -128,3 +128,113 @@ $name = "Nahid";
 $name .="Sopno";
 
 echo $name;
+
+echo "<br/>";
+var_dump(10>5);
+echo "<br/>";
+var_dump(10<5);
+echo "<br/>";
+var_dump(10 >= 5);
+echo "<br/>";
+var_dump(10 <= 9);
+echo "<br/>";
+var_dump(10==5);
+echo "<br/>";
+var_dump(10==10);
+echo "<br/>";
+var_dump(10!=9);
+echo "<br/>";
+var_dump(10===10);
+echo "<br/>";
+// Condition if ealse
+
+ $day = "Monday";
+
+if ($day === "Friday"){
+echo "Today is holyday";
+}
+else
+{
+    echo "Today office open ";
+}
+
+echo "<br/>";
+
+
+if ($day === "Sunday" ||$day === "Saturday" ){
+    echo "Today is holyday";
+    }
+else{
+    echo "Today is not Holyday";
+}
+echo "<br/>";
+
+if ($day === "Sunday" ||$day === "Saturday" ){
+    echo "Today is holyday";
+    }
+    elseif($day === "Monday"){
+      echo "This is Monday.";
+    }
+else{
+    echo "Today is not Holyday";
+}
+echo "<br/>";
+/* Array
+
+In PHP there are three types of arrys:
+* Indexed arrays - Arrays with a numeric Indexed
+* Associative arrays - Arrays with Named keays
+* Multidimensional arrays - Arrays containing one or more arrays. 
+*/
+
+
+//Indexed arrays
+
+/*$array = ["a","b", 2.5, 10 ];
+echo $array[0];
+echo "<br/>";
+echo $array[1];
+echo "<br/>";
+echo $array[2];
+echo "<br/>";
+echo $array[3];
+echo "<br/>";
+
+//Associative arrays
+
+$array = [
+   "first_letter" =>"a",
+    "Last_letter" =>"b", 
+    "points" => 2.5, 
+   "age" =>10 ];
+
+   echo $array["first_letter"];
+   echo "<br/>";
+   echo $array["age"]; 
+   echo "<br/>";
+   echo $array["Last_letter"];
+   echo "<br/>";
+   echo $array["points"];
+   echo "<br/>";*/
+
+   /*Multidimensional arrays
+
+   $array =[
+    "Name" => "Nahid",
+    "age" => 25,
+    "Address" => [
+        "Street_address" => "27/2A , Shajadpur",
+        "City" => "Dhaka",
+        "Zipcode" => "1212",
+        "Country" =>"Bangladesh" ],
+        "Mobile_Number"=>
+        [
+            "country_prefix"=>"+880",
+            "Number"=>"1759506823"
+        ],
+    ];
+    print_r ($array);
+*/
+$array = [
+   1,2,3,4,5,6,7,8,9,10
+];
