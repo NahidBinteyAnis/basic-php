@@ -235,6 +235,73 @@ $array = [
     ];
     print_r ($array);
 */
+// While loop
 $array = [
    1,2,3,4,5,6,7,8,9,10
 ];
+
+$i=1;
+while($i<=10){
+    echo $i . "x5=".$i*5 ."<br/>";
+    $i++;
+}
+
+// do while loop
+
+$k=1;
+do{
+    echo $k . "x9=".$k*9 ."<br/>";
+    $k++;
+}
+while($k<=10);
+
+//for loop
+
+
+for($j = 1; $j<= 10; $j++)
+{
+    echo $j ."x4=". $j*4 . "<br/>";
+}
+
+// foreach loop
+
+$array = [
+    1,2,3,4,5,6,7,8,9,10
+];
+
+foreach($array as $key =>$value){
+    echo $key.":" . $value ."<br/>";
+}
+
+//functions
+
+/*
+function sum($number1,$number2){
+    echo $number1 + $number2; 
+}
+ sum(100,30);
+ function sum($number1,$number2){
+    return $number1 + $number2; 
+}
+echo sum(100,30);
+echo "<br/>";
+echo sum(100,200);
+*/
+function multi($x,$y){
+    return $x * $y;
+}
+echo multi(50,20);
+
+echo "<br/>";
+//internal functions
+
+$array=[
+    10,20,30,40,50,20,30
+];
+
+$filtered_array = array_unique($array);
+var_dump($filtered_array);
+echo "<br/>";
+echo count($filtered_array);
+echo "<br/>";
+echo count($array);
